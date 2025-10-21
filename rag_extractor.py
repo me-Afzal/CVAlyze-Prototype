@@ -65,7 +65,7 @@ You are a fast, precise resume information extraction system. Your **ONLY** outp
 """
         combined_prompt += text
 
-        api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+        api_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
         headers = {"Content-Type": "application/json", "X-goog-api-key": self.api_key}
         payload = {"contents": [{"parts": [{"text": combined_prompt}]}]}
 
